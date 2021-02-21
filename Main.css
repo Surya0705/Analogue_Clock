@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #001622;
+}
+
+.Clock{
+    width: 375px;
+    height: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Image.jpg);
+    background-size: cover;
+    border: 4px;
+    box-shadow: 0em -1.2em 1.2em rgb(255, 0, 106),
+                inset 0em -1.2em 1.2em rgb(0, 0, 0),
+                0em 1.2em 1.2em rgb(0, 204, 255),
+                inset 0em 1.2em 1.2em rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.Clock::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.Hour{
+    height: 160px;
+} 
+
+.Min{
+    height: 190px;
+}
+
+.Sec{
+    height: 230px;
+}
+
+.Hour, .Min, .Sec{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.Hour:after{
+    content: '';
+    position: absolute;
+    width: 7.5px;
+    height: 80px;
+    background: #ff0000;
+    z-index: 10;
+    border-radius: 2.8px;
+}
+
+.Min:before {
+    content: '';
+    position: absolute;
+    width: 3.5px;
+    height: 95px;
+    background: #48ff00;
+    z-index: 11;
+    border-radius: 3px;
+}
+
+.Sec:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 115px;
+    background: #0058bd;
+    z-index: 12;
+    border-radius: 3px;
+}
