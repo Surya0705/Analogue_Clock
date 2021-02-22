@@ -4,5 +4,5 @@ This is an Analogue Clock Website made using HTML, CSS, and JavaScript. It's ver
 Below is the Screenshot of this Website:
 <img src="Code_Screenshot.png"><img>
 And the below image show's you the working output of this Website:
-<img src="Program's_Working.png"><img>
+<img src="Program’s_Working.jpg"><img>
 Hope that you Liked it!
